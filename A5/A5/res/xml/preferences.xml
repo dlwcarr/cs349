@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <com.example.cs349a5.FrameratePickerPreference
+        android:key="@string/framerate_prefs_key"
+        android:title="Playback Framerate"
+        />
+    
+    <com.example.cs349a5.ColorPickerPreference
+        android:key="@string/color_prefs_key"
+        android:title="Background Colour"
+        android:summary="Select a background colour for the animation"
+        />
+    
+</PreferenceScreen>

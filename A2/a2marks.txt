@@ -1,0 +1,29 @@
+CS 349 ASSIGN 2 MARKING SCHEME
+Marker: Jeff Avery
+
+INFRASTRUCTURE (0/5)
+[0/3] Includes makefile or Eclipse project
+[0/2] README file included
+** no documentation
+** package name doesn't match directory, had to create com/cranesim directory structure to run it
+
+BASIC REQUIREMENTS (46/80)
+[8/10] The crane consists of body, tracks, four arm segments and an electromagnet.
+** no tracks (-2)
+[5/5] The crane can be moved left and right via direct manipulation with the mouse.
+[20/20] The arm segments are articulated and can be moved via direct manipulation. Arms can rotate 360 degrees, and we don’t need to handle collision between arm segments (i.e. they can overlap). However, some minor rotation or movement constraints should be in place to prevent arm segments from falling through the ground.
+[13/20] When placed directly over a block, the magnet can be used to pick up that block. The magnet must be parallel (or near-parallel) to the top of the block to pick it up. The magnet can be turned on or off by direct manipulation (i.e. clicking on the electromagnetic attachment). Once attached, the block should move with the magnet.
+** difficult to pick up a block, had to try multiple times (no tolerance?)
+** picked up a block and it was translated to sit ON TOP of the magnet (-2)
+** turned off the magnet, and blocks stayed in mid-air (-5)
+** rotation is very sporatic
+[0/25] Blocks can be stacked on the ground, or on one another. Blocks that are detached without being parallel to the receiving surface should not be allowed (specific results are left to the user - they can shatter, or return to their starting position). Collision detection should be implemented such that blocks cannot be placed inside of other blocks (i.e. they should stack). There should be some small allowance for blocks being dropped a few pixels above the surface (i.e. it will be difficult to line up pixel-for-pixel, so dropping within a small number of pixels should be allowed)
+** blocks stop wherever you place them
+** no collision detection at all
+** moving an active magnet near other blocks sort-of picks them up, very erratic behaviour
+
+ENHANCEMENTS [0/15]
+
+TOTAL
+46/100
+ 

@@ -1,0 +1,70 @@
+CS 349 A3 Marks
+
+Marker: Yi
+
+
+
+Total marks:
+
+70/100
+
+
+
+Basic requirements (52/25)
+
+[/2] README present
+
+[/3] Makefile exists and builds the project successfully
+
+[/10] Class diagram clearly showing use of MVC (submitted as a PDF)
+
+
+
+
+
+[/5] Create a window with a drawing area, a toolbar at the top, and a slider at the bottom with buttons beneath it to control the animation. The window should be resizable.
+
+[/5] Users can switch between modes (at least): Drawing, Erasing, and Selecting mode. Switching modes should not leave the application in an inconsistent state. For example, switching modes should end the previous action, and automatically pause any animation (see below).
+
+
+
+
+
+Drawing objects (5/5)
+
+[/5] Drawing mode allows users to draw objects (as simple sets of connected points). When drawing, the timeline should remain paused.
+
+
+
+Erasing objects (5/5)
+
+[/5] When in erase mode, the user should be able to draw over an object to delete it. Erasing part of an object should effectively erase the entire object (e.g. when erasing one line in a series, all of the connected lines should be erased). If you erase something at a point in time, it vanishes from the screen.
+
+
+
+Selecting and moving (15/20)
+
+[5/5] Users can select entire objects by drawing a lasso around them. If the lasso doesn't include the complete object, the object should not be selected.
+
+[5/5] Selecting multiple objects with a single lasso is possible.
+
+[5/10] Users can translate objects by selecting and dragging to a new location. All selected objects should be translated.
+
+--always go back to the original place
+
+
+
+Animation (20/30)
+
+[5/5] The slider provides play and pause buttons to play or pause the animation. Playback should repeat the actions that the user performed.
+
+[5/5] The slider should animate during playback to indicate the current frame/location. Timing should mimic the timing of the actual drawing task.
+
+[10/10] By clicking and dragging the slider, you can move backward and forward through the animation in real-time.
+
+[0/10] Users can insert frames into the existing animation (by pausing the animation, and clicking a button to insert, or ctrl-dragging the slider - please indicate in the README how to do this!). Frames added in this fashion can be populated
+
+
+
+Enhancements (0/15)
+

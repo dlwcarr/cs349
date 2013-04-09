@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal" >
+    
+    <View 
+        android:id="@+id/color_preview"
+        android:layout_height="fill_parent"
+        android:layout_width="50dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_vertical"
+        />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:text="@string/R"
+		        android:textIsSelectable="false"
+		        />
+            
+            <SeekBar
+		        android:id="@+id/red_seekbar"
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:max="0xFF"
+		        android:progress="0x00"
+		        />
+                
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:text="@string/G"
+		        android:textIsSelectable="false"
+		        />
+            
+            <SeekBar
+		        android:id="@+id/green_seekbar"
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		      	android:max="0xFF"
+		        android:progress="0x00"
+		        />
+                
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:text="@string/B"
+		        android:textIsSelectable="false"
+		        />
+            
+            <SeekBar
+		        android:id="@+id/blue_seekbar"
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:max="0xFF"
+		        android:progress="0x00"
+		        />
+                
+        </LinearLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>
